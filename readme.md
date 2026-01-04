@@ -1,10 +1,10 @@
-Abstract
+<b>Abstract</b>
 - This project applies advanced statistical learning and probabilistic modeling to uncover latent market regimes in equity index data and exploit regime structure for return forecasting. Using a Hidden Markov Model (HMM) trained on transformed return and volatility features, the system detects persistent market states and demonstrates that regime-aware forecasts significantly outperform classical time-series baselines.
 
-Data
+<b>Data</b>
 - Daily OHLCV data for the S&P 500 spanning 2000–2026, sourced from Yahoo Finance.
 
-Methodology
+<b>Methodology</b>
 1. Data Engineering
 - Cleaning and type normalization
 - Log-return transformation
@@ -22,15 +22,18 @@ Methodology
 - Regime-aware: conditional return expectation by inferred market state
 - Out-of-sample evaluation with realistic walk-forward testing
 
-Results
-Model              MSE	    Direction Accuracy
-ARIMA	        ~0.000158	     ~49.8%
-Regime-Aware	~0.000149	     ~53.6%
+<b>Results</b>
 
-Key Insight:
+ARIMA(MSE) - ~0.000158 </br>
+ARIMA(Direction Accuracy) - ~49.8% </br>
+Regime-Aware(MSE) -	~0.000149 </br>
+Regime-Aware(Direction Accuracy) - ~53.6% </br>
+
+
+<b>Key Insight:</b>
 - Incorporating latent regime information produces a statistically meaningful improvement in both forecast error and directional accuracy over classical models.
 
-Regime Characteristics
+<b>Regime Characteristics</b>
 The discovered regimes exhibit:
 - strong persistence
 - realistic transition behavior
